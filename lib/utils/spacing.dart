@@ -1,0 +1,16 @@
+const double kSpacing80 = 80;
+const double kSpacing70 = 70;
+const double kSpacing64 = 64;
+const double kSpacing40 = 40;
+const double kSpacing36 = 36;
+const double kSpacing30 = 30;
+const double kSpacing24 = 24;
+const double kSpacing20 = 20;
+const double kSpacing16 = 16;
+const double kSpacing15 = 15;
+const double kSpacing14 = 14;
+const double kSpacing12 = 12;
+const double kSpacing10 = 10;
+const double kSpacing8 = 8;
+const double kSpacing6 = 6;
+const double kSpacing4 = 4;
