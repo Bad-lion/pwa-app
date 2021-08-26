@@ -25,14 +25,20 @@ const FontWeight kFontWeight600 = FontWeight.w600;
 const FontWeight kFontWeight700 = FontWeight.w700;
 const FontWeight kFontWeight800 = FontWeight.w800;
 
-const kSearchBarTS = TextStyle(
-  fontSize: kFontSize14,
+const kSubtitleTS = TextStyle(
+  fontSize: kFontSize10,
   fontWeight: kFontWeight400,
   color: kgray,
 );
 
-const kSubtitleTS = TextStyle(
-  fontSize: kFontSize10,
+const kunderHeadTitleTS = TextStyle(
+  fontSize: kFontSize12,
+  fontWeight: kFontWeight300,
+  color: kdark,
+);
+
+const kSearchBarTS = TextStyle(
+  fontSize: kFontSize14,
   fontWeight: kFontWeight400,
   color: kgray,
 );
@@ -41,6 +47,33 @@ const kSubtitle2TS = TextStyle(
   fontSize: kFontSize16,
   fontWeight: kFontWeight400,
   color: kdarkVariant,
+);
+
+//-----------------subscribe container-------------
+const ksubscribeTitleTS = TextStyle(
+  fontSize: kFontSize22,
+  fontWeight: kFontWeight600,
+  color: Colors.white,
+);
+
+const ksubscribeSubtitleTS = TextStyle(
+  fontSize: kFontSize16,
+  fontWeight: kFontWeight300,
+  color: Colors.white,
+);
+//----------------------buttonStyle----------------
+const kbuttonTS = TextStyle(
+  fontSize: kFontSize16,
+  fontWeight: kFontWeight600,
+  color: Colors.white,
+);
+
+//-------------------------footer--------------------
+
+const kfooterTS = TextStyle(
+  fontSize: kFontSize16,
+  fontWeight: kFontWeight500,
+  color: Colors.white,
 );
 
 const kTitleTS = TextStyle(
@@ -64,11 +97,11 @@ const kHead2TS = TextStyle(
 const kwrapContainerTextTs = TextStyle(
   fontSize: kFontSize14,
   fontWeight: kFontWeight300,
-  color: kprimeryColor,
+  color: kdark,
 );
 
 const kwrapContainerCostTs = TextStyle(
-  fontSize: kFontSize14,
-  fontWeight: kFontWeight300,
-  color: kprimeryColor,
+  fontSize: kFontSize18,
+  fontWeight: kFontWeight500,
+  color: kdark,
 );

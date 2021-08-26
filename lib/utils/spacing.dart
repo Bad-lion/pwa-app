@@ -1,5 +1,5 @@
 const double kSpacing80 = 80;
-const double kSpacing70 = 70;
+const double kSpacing72 = 72;
 const double kSpacing64 = 64;
 const double kSpacing40 = 40;
 const double kSpacing36 = 36;

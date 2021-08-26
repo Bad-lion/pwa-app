@@ -1,12 +1,14 @@
+import 'package:animate_icons/animate_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:pwa/utils/exports.dart';
 import 'package:pwa/widgets/appbars/main_appbar.dart';
+import 'package:pwa/widgets/buttons/main_button.dart';
 import 'package:pwa/widgets/dismiss_keyboard.dart';
+import 'package:pwa/widgets/footer.dart';
 import 'package:pwa/widgets/wrap_container.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
+  HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return DismissKeyboard(
@@ -112,18 +114,90 @@ class HomePage extends StatelessWidget {
               ),
               SizedBox(height: kSpacing64),
               Container(
-                height: 334,
+                height: 336,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 4,
                   itemBuilder: (ctx, index) => WrapContainer(
                     ctx: ctx,
-                    image: 'assets/images/banner2.png',
+                    image: 'assets/images/wrap_image.png',
                     cost: '\$50.00',
                     title: 'Vila stripe shirt dress',
+                    ratig: 8,
                   ),
                 ),
               ),
+              SizedBox(height: kSpacing72),
+              Container(
+                height: 210,
+                width: double.infinity,
+                color: kgray,
+                padding: EdgeInsets.all(24),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      'Subscribe to Newsletters',
+                      style: ksubscribeTitleTS,
+                    ),
+                    SizedBox(height: kSpacing16),
+                    Text(
+                        'Be aware of upcoming sales and events. Receive gifts and special offers!',
+                        style: ksubscribeSubtitleTS),
+                    SizedBox(height: 16),
+                    MainButton(ctx: context, title: 'SUBSCRIBE')
+                  ],
+                ),
+              ),
+              SizedBox(height: kSpacing64),
+              Container(
+                height: 36,
+                child: Text(
+                  'Share Your Look',
+                  style: Theme.of(context).textTheme.headline2,
+                ),
+              ),
+              Text(
+                '#YOURLOOK',
+                style: kunderHeadTitleTS,
+              ),
+              SizedBox(height: kSpacing64),
+              Container(
+                margin:
+                    EdgeInsets.only(left: 21, right: 21, top: 21, bottom: 32),
+                width: double.infinity,
+                height: MediaQuery.of(context).size.width - 42,
+                child: Wrap(
+                  runAlignment: WrapAlignment.center,
+                  alignment: WrapAlignment.center,
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width / 2 - 25,
+                      child: Image.asset('assets/images/insta.png',
+                          fit: BoxFit.contain),
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width / 2 - 25,
+                      child: Image.asset('assets/images/insta.png',
+                          fit: BoxFit.contain),
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width / 2 - 25,
+                      child: Image.asset('assets/images/insta.png',
+                          fit: BoxFit.contain),
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width / 2 - 25,
+                      child: Image.asset('assets/images/insta.png',
+                          fit: BoxFit.contain),
+                    ),
+                  ],
+                ),
+              ),
+              Footer()
             ],
           ),
         ),

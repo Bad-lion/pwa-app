@@ -8,6 +8,7 @@ class AppTheme {
   );
 
   static final ThemeData mainTheme = ThemeData(
+      accentColor: kdark,
       primaryColor: kprimeryColor,
       secondaryHeaderColor: ksecondaryColor,
       hintColor: kinfoColor,
