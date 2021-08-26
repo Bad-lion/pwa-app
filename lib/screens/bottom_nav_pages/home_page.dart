@@ -1,11 +1,10 @@
-import 'package:animate_icons/animate_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:pwa/utils/exports.dart';
 import 'package:pwa/widgets/appbars/main_appbar.dart';
 import 'package:pwa/widgets/buttons/main_button.dart';
 import 'package:pwa/widgets/dismiss_keyboard.dart';
 import 'package:pwa/widgets/footer.dart';
-import 'package:pwa/widgets/wrap_container.dart';
+import 'package:pwa/widgets/item_widgets/wrap_container.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);

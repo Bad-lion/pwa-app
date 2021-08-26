@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pwa/screens/bottom_controler.dart';
+import 'package:pwa/screens/category_screes/category_screen.dart';
 import 'package:pwa/utils/theme.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.mainTheme,
       home: BottomController(),
+      routes: {CategoryScreen.routname: (ctx) => CategoryScreen()},
     );
   }
 }

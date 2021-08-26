@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pwa/utils/exports.dart';
 
-const double kFontSize44 = 44;
+const double kFontSize42 = 42;
 const double kFontSize30 = 30;
 const double kFontSize26 = 26;
 const double kFontSize24 = 24;
@@ -104,4 +104,15 @@ const kwrapContainerCostTs = TextStyle(
   fontSize: kFontSize18,
   fontWeight: kFontWeight500,
   color: kdark,
+);
+
+const kMenuItmesTitleTS = TextStyle(
+  fontSize: kFontSize42,
+  fontWeight: kFontWeight400,
+  color: kdark,
+);
+const kMenuItmesSubtitleTS = TextStyle(
+  fontSize: kFontSize10,
+  fontWeight: kFontWeight400,
+  color: kdarkVariant,
 );
