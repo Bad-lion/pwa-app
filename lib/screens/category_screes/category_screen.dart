@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pwa/widgets/appbars/secondary_appbar.dart';
-import 'package:pwa/widgets/item_widgets/list_widget.dart';
 import 'package:pwa/widgets/item_widgets/list_widget_second_screen.dart';
 
 class CategoryScreen extends StatelessWidget {

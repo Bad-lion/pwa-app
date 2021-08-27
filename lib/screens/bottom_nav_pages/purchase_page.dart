@@ -8,6 +8,7 @@ class PurchasePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: SecondaryAppBar(
+        backBtn: false,
         ctx: context,
         titleText: 'Cart',
       ),

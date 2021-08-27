@@ -10,7 +10,7 @@ import 'package:pwa/utils/colors.dart';
 
 class BottomController extends StatelessWidget {
   BottomController({Key? key}) : super(key: key);
-  PersistentTabController _controller =
+  final PersistentTabController _controller =
       PersistentTabController(initialIndex: 0);
 
   @override
@@ -23,12 +23,13 @@ class BottomController extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 12.0),
               child: FloatingActionButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => PurchasePage(),
-                    ),
-                  );
+                  _controller.jumpToTab(4);
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => PurchasePage(),
+                  //   ),
+                  // );
                 },
                 backgroundColor: kprimeryColor,
                 elevation: 0,
@@ -43,7 +44,7 @@ class BottomController extends StatelessWidget {
       body: PersistentTabView(context,
           controller: _controller,
           screens: _buildScreens(),
-          items: _navBarsItems(),
+          items: _navBarsItems(context),
           // navBarHeight: 60.0,
           padding: NavBarPadding.all(4),
           confineInSafeArea: true,
@@ -87,7 +88,7 @@ List<Widget> _buildScreens() {
   ];
 }
 
-List<PersistentBottomNavBarItem> _navBarsItems() {
+List<PersistentBottomNavBarItem> _navBarsItems(BuildContext context) {
   return [
     PersistentBottomNavBarItem(
         activeColorPrimary: kprimeryColor,
@@ -140,7 +141,14 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
     PersistentBottomNavBarItem(
         activeColorPrimary: kprimeryColor,
         icon: Icon(Icons.card_travel, color: Colors.white),
-        onPressed: (value) {},
+        onPressed: (value) {
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) => PurchasePage(),
+          //   ),
+          // );
+        },
         title: 'Cart'),
   ];
 }

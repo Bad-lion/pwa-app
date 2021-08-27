@@ -27,7 +27,7 @@ class ListWidgetsHelper extends StatelessWidget {
           Navigator.push(
             ctx,
             MaterialPageRoute(
-              builder: (context) => CategoryScreen(),
+              builder: (ctx) => CategoryScreen(),
               settings: RouteSettings(
                   arguments: {'item': items3, 'title': items[index]}),
             ),

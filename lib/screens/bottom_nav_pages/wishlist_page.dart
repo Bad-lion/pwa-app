@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pwa/utils/exports.dart';
-import 'package:pwa/widgets/item_widgets/wrap_container.dart';
 
 class WishListPage extends StatefulWidget {
   const WishListPage({Key? key}) : super(key: key);
