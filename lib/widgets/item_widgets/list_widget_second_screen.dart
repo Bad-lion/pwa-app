@@ -3,15 +3,21 @@ import 'package:flutter_svg/svg.dart';
 import 'package:pwa/screens/category_screes/category_screen.dart';
 import 'package:pwa/utils/exports.dart';
 
-class ListWidgets extends StatelessWidget {
+class ListWidgetsHelper extends StatelessWidget {
   final BuildContext context;
   final List items;
-  const ListWidgets({Key? key, required this.items, required this.context})
+  const ListWidgetsHelper(
+      {Key? key, required this.items, required this.context})
       : super(key: key);
 
   @override
   Widget build(BuildContext ctx) {
-    List items2 = ['Clothing', 'Accessories', 'Shoes'];
+    List items3 = [
+      'Skirts',
+      'Sweaters',
+      'Dresses',
+      'Pants',
+    ];
     return ListView.builder(
       physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
@@ -23,7 +29,7 @@ class ListWidgets extends StatelessWidget {
             MaterialPageRoute(
               builder: (context) => CategoryScreen(),
               settings: RouteSettings(
-                  arguments: {'item': items2, 'title': items[index]}),
+                  arguments: {'item': items3, 'title': items[index]}),
             ),
           );
         },

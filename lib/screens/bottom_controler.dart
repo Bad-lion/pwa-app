@@ -15,21 +15,31 @@ class BottomController extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool showFab = MediaQuery.of(context).viewInsets.bottom == 0.0;
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.only(bottom: 12.0),
-        child: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: kprimeryColor,
-          elevation: 0,
-          child: SvgPicture.asset(
-            'assets/icons/cart.svg',
-            color: Colors.white,
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
+      floatingActionButton: showFab
+          ? Padding(
+              padding: const EdgeInsets.only(bottom: 12.0),
+              child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PurchasePage(),
+                    ),
+                  );
+                },
+                backgroundColor: kprimeryColor,
+                elevation: 0,
+                child: SvgPicture.asset(
+                  'assets/icons/cart.svg',
+                  color: Colors.white,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            )
+          : null,
       body: PersistentTabView(context,
           controller: _controller,
           screens: _buildScreens(),

@@ -8,7 +8,7 @@ class MenuPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> items = ['Women', 'Men', 'Kids'];
+    List items = ['Women', 'Men', 'Kids'];
     List<Map<String, dynamic>> mapList = [
       {
         'image': 'assets/images/menu_image.png',
@@ -22,7 +22,11 @@ class MenuPage extends StatelessWidget {
       },
     ];
     return Scaffold(
-      appBar: SecondaryAppBar(titleText: 'Menu'),
+      appBar: SecondaryAppBar(
+        titleText: 'Menu',
+        ctx: context,
+        backBtn: false,
+      ),
       body: SingleChildScrollView(
         child: Container(
           child: Column(

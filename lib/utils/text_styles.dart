@@ -116,3 +116,9 @@ const kMenuItmesSubtitleTS = TextStyle(
   fontWeight: kFontWeight400,
   color: kdarkVariant,
 );
+
+const kDropdownItemsTS = TextStyle(
+  fontSize: kFontSize18,
+  fontWeight: kFontWeight400,
+  color: kdark,
+);
