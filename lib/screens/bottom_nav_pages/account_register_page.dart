@@ -30,11 +30,16 @@ class AccountRegisterPage extends StatelessWidget {
               MainButton(
                   func: (val) {}, ctx: context, title: 'CREATE AND ACCOUNT'),
               SizedBox(height: kSpacing22),
-              Text(
-                'or log in to your account',
-                style: TextStyle(
-                    fontSize: 14, fontWeight: FontWeight.w500, color: kdark),
-                textAlign: TextAlign.center,
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'or log in to your account',
+                  style: TextStyle(
+                      fontSize: 14, fontWeight: FontWeight.w500, color: kdark),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ],
           ),
