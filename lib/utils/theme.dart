@@ -11,9 +11,27 @@ class AppTheme {
       accentColor: kdark,
       primaryColor: kprimeryColor,
       secondaryHeaderColor: ksecondaryColor,
-      hintColor: kinfoColor,
+      hintColor: kdark,
       errorColor: kdangerColor,
       textTheme: _TextTheme,
+      textSelectionTheme: textThemeData,
+      inputDecorationTheme: inputDec,
+      checkboxTheme: checkBox,
       scaffoldBackgroundColor: Colors.white,
       fontFamily: GoogleFonts.raleway().fontFamily);
+
+  static final TextSelectionThemeData textThemeData = TextSelectionThemeData(
+      cursorColor: ksecondaryColor,
+      selectionColor: ksecondaryColor,
+      selectionHandleColor: ksecondaryColor);
+
+  static final InputDecorationTheme inputDec = InputDecorationTheme(
+      focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: kdark)),
+      hintStyle: kDropdownItemsTS,
+      prefixStyle: kDropdownItemsTS);
+
+  static final CheckboxThemeData checkBox = CheckboxThemeData(
+    checkColor: MaterialStateProperty.all(Colors.white),
+    fillColor: MaterialStateProperty.all(kprimeryColor),
+  );
 }

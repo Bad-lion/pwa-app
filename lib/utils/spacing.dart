@@ -1,10 +1,13 @@
 const double kSpacing80 = 80;
 const double kSpacing72 = 72;
 const double kSpacing64 = 64;
+const double kSpacing48 = 48;
 const double kSpacing40 = 40;
 const double kSpacing36 = 36;
+const double kSpacing32 = 32;
 const double kSpacing30 = 30;
 const double kSpacing24 = 24;
+const double kSpacing22 = 22;
 const double kSpacing20 = 20;
 const double kSpacing16 = 16;
 const double kSpacing15 = 15;

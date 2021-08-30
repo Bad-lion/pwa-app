@@ -18,6 +18,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.mainTheme,
+
       home: BottomController(),
       // routes: {CategoryScreen.routname: (ctx) => CategoryScreen()},
     );

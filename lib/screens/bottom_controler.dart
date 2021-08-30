@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
-import 'package:pwa/screens/bottom_nav_pages/accaount_page.dart';
-import 'package:pwa/screens/bottom_nav_pages/home_page.dart';
-import 'package:pwa/screens/bottom_nav_pages/menu_page.dart';
-import 'package:pwa/screens/bottom_nav_pages/purchase_page.dart';
-import 'package:pwa/screens/bottom_nav_pages/wishlist_page.dart';
-import 'package:pwa/utils/colors.dart';
+import 'bottom_nav_pages/bottom_nav_exports.dart';
 
 class BottomController extends StatelessWidget {
   BottomController({Key? key}) : super(key: key);

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pwa/widgets/appbars/secondary_appbar.dart';
-import 'package:pwa/widgets/item_widgets/list_widget.dart';
-import 'package:pwa/widgets/item_widgets/menu_list_image_items.dart';
+
+import 'bottom_nav_exports.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({Key? key}) : super(key: key);

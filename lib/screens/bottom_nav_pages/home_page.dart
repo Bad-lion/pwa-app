@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pwa/utils/exports.dart';
-import 'package:pwa/widgets/appbars/main_appbar.dart';
-import 'package:pwa/widgets/buttons/main_button.dart';
-import 'package:pwa/widgets/dismiss_keyboard.dart';
 import 'package:pwa/widgets/footer.dart';
-import 'package:pwa/widgets/item_widgets/wrap_container.dart';
+import 'bottom_nav_exports.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -145,7 +142,11 @@ class HomePage extends StatelessWidget {
                         'Be aware of upcoming sales and events. Receive gifts and special offers!',
                         style: ksubscribeSubtitleTS),
                     SizedBox(height: 16),
-                    MainButton(ctx: context, title: 'SUBSCRIBE')
+                    MainButton(
+                      ctx: context,
+                      title: 'SUBSCRIBE',
+                      func: (context) {},
+                    )
                   ],
                 ),
               ),

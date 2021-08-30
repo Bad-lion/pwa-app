@@ -106,6 +106,12 @@ const kwrapContainerCostTs = TextStyle(
   color: kdark,
 );
 
+const kwrapContainerCostCountTs = TextStyle(
+  fontSize: kFontSize18,
+  fontWeight: kFontWeight600,
+  color: kdark,
+);
+
 const kMenuItmesTitleTS = TextStyle(
   fontSize: kFontSize42,
   fontWeight: kFontWeight400,
@@ -121,4 +127,29 @@ const kDropdownItemsTS = TextStyle(
   fontSize: kFontSize18,
   fontWeight: kFontWeight400,
   color: kdark,
+);
+
+const kItemTitleTS = TextStyle(
+  fontSize: kFontSize14,
+  fontWeight: kFontWeight400,
+  color: kdark,
+);
+
+const kItemTitle2TS = TextStyle(
+  fontSize: kFontSize16,
+  fontWeight: kFontWeight400,
+  color: kdark,
+);
+
+const kitemSizeTS = TextStyle(
+  fontSize: kFontSize16,
+  fontWeight: kFontWeight600,
+  color: kdark,
+);
+
+const kUnderLineTS = TextStyle(
+  fontSize: kFontSize14,
+  fontWeight: FontWeight.w500,
+  color: kdark,
+  decoration: TextDecoration.underline,
 );

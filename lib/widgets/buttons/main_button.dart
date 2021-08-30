@@ -4,10 +4,19 @@ import 'package:pwa/utils/exports.dart';
 class MainButton extends ElevatedButton {
   final BuildContext ctx;
   final String title;
-  MainButton({required this.ctx, required this.title, Key? key})
-      : super(
+  final Color color;
+  Function(BuildContext context) func;
+  MainButton({
+    this.color = kprimeryColor,
+    required this.func,
+    required this.ctx,
+    required this.title,
+    Key? key,
+  }) : super(
           key: key,
-          onPressed: () {},
+          onPressed: () {
+            func(ctx);
+          },
           style: ButtonStyle(
             fixedSize: MaterialStateProperty.all(Size(double.infinity, 52)),
             elevation: MaterialStateProperty.all(0),
@@ -16,8 +25,7 @@ class MainButton extends ElevatedButton {
                 borderRadius: BorderRadius.circular(0),
               ),
             ),
-            backgroundColor:
-                MaterialStateProperty.all(Theme.of(ctx).primaryColor),
+            backgroundColor: MaterialStateProperty.all(color),
           ),
           child: Text(
             title,
